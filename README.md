@@ -1,6 +1,6 @@
 # UK Energy Research Centre (UKERC) Hackathon 2026
 
-Welcome to the **UK Energy Research Centre Hackathon** workspace! This repository contains curated, real-world energy datasets, starter analysis notebooks, and comprehensive data schemas designed to support participants tackling the UK's most critical energy transition challenges.
+Welcome to the **UK Energy Research Centre Hackathon** workspace! This repository contains curated, real-world energy datasets, starter analysis notebooks, and data schemas designed to support participants tackling the UK's most critical energy transition challenges.
 
 ---
 
