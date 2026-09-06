@@ -1,0 +1,12 @@
+datasets
+
+1. eoh_interim_performance_summary,csv [per brief]
+
+2. open_epc_domestic_sample_england.csv [per brief]
+
+3. ideal_household_temp_humidity.csv [per brief]
+
+4. uk_cold_snap_winter_weather_hourly.csv [added] endpoint: https://archive-api.open-meteo.com/v1/archive?latitude=51.5074&longitude=-0.1278&start_date=2022-12-05&end_date=2022-12-18&hourly=temperature_2m,relative_humidity_2m,dew_point_2 (Provides hourly outdoor temperature and humidity during freezing winter cold snaps so teams can compute indoor surface condensation risk and dew points.)
+
+
+

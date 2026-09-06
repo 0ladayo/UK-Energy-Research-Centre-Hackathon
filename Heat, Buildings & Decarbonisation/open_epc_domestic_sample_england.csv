@@ -1,0 +1,201 @@
+lmk_key,property_type,built_form,current_energy_rating,current_energy_efficiency,glaz_type,walls_description,total_floor_area,postcode
+EPC_000001,Bungalow,End-Terrace,D,33,double glazing,"Cavity wall, filled cavity",169,SW1A 10AA
+EPC_000002,Bungalow,Mid-Terrace,C,38,double glazing,"Solid brick, as built, no insulation",102,SW1A 11AA
+EPC_000003,Flat,Semi-Detached,D,67,single glazing,"Cavity wall, as built, no insulation",176,SW1A 12AA
+EPC_000004,Maisonette,Mid-Terrace,A,77,double glazing,"Cavity wall, as built, no insulation",66,SW1A 13AA
+EPC_000005,Bungalow,Detached,E,36,double glazing,"Cavity wall, as built, no insulation",85,SW1A 14AA
+EPC_000006,Bungalow,Semi-Detached,D,69,double glazing,"Cavity wall, as built, no insulation",99,SW1A 15AA
+EPC_000007,Flat,Detached,C,83,double glazing,"Solid brick, as built, no insulation",108,SW1A 16AA
+EPC_000008,Bungalow,Mid-Terrace,C,35,single glazing,"Cavity wall, filled cavity",161,SW1A 17AA
+EPC_000009,Bungalow,Mid-Terrace,C,70,single glazing,"Solid brick, as built, no insulation",141,SW1A 18AA
+EPC_000010,Flat,Semi-Detached,C,54,single glazing,"Cavity wall, as built, no insulation",61,SW1A 19AA
+EPC_000011,Flat,Semi-Detached,G,42,double glazing,"Cavity wall, filled cavity",62,SW1A 20AA
+EPC_000012,House,End-Terrace,D,36,double glazing,"Solid brick, as built, no insulation",162,SW1A 21AA
+EPC_000013,House,End-Terrace,D,35,single glazing,"Cavity wall, as built, no insulation",172,SW1A 22AA
+EPC_000014,Bungalow,Mid-Terrace,D,48,double glazing,"Cavity wall, as built, no insulation",125,SW1A 23AA
+EPC_000015,House,Mid-Terrace,B,38,single glazing,"Solid brick, as built, no insulation",116,SW1A 24AA
+EPC_000016,Flat,Semi-Detached,D,73,double glazing,"Cavity wall, filled cavity",66,SW1A 25AA
+EPC_000017,House,Detached,D,75,single glazing,"Cavity wall, as built, no insulation",60,SW1A 26AA
+EPC_000018,House,Detached,D,58,double glazing,"Solid brick, as built, no insulation",53,SW1A 27AA
+EPC_000019,House,Mid-Terrace,D,77,double glazing,"Cavity wall, as built, no insulation",101,SW1A 28AA
+EPC_000020,Maisonette,Detached,D,51,double glazing,"Solid brick, as built, no insulation",114,SW1A 29AA
+EPC_000021,Flat,Semi-Detached,C,72,double glazing,"Solid brick, as built, no insulation",71,SW1A 30AA
+EPC_000022,House,Semi-Detached,D,74,double glazing,"Cavity wall, as built, no insulation",136,SW1A 31AA
+EPC_000023,Flat,Semi-Detached,E,69,double glazing,"Cavity wall, as built, no insulation",108,SW1A 32AA
+EPC_000024,House,Mid-Terrace,A,68,double glazing,"Cavity wall, filled cavity",154,SW1A 33AA
+EPC_000025,Flat,End-Terrace,D,71,triple glazing,"Solid brick, as built, no insulation",174,SW1A 34AA
+EPC_000026,Bungalow,Detached,F,84,double glazing,"Solid brick, as built, no insulation",132,SW1A 35AA
+EPC_000027,Bungalow,End-Terrace,C,64,double glazing,"Cavity wall, filled cavity",61,SW1A 36AA
+EPC_000028,Maisonette,Semi-Detached,C,86,double glazing,"Cavity wall, as built, no insulation",76,SW1A 37AA
+EPC_000029,House,Mid-Terrace,C,46,triple glazing,"Cavity wall, filled cavity",109,SW1A 38AA
+EPC_000030,Bungalow,Detached,D,59,double glazing,"Cavity wall, filled cavity",68,SW1A 39AA
+EPC_000031,Flat,End-Terrace,C,46,double glazing,"Cavity wall, filled cavity",109,SW1A 40AA
+EPC_000032,Bungalow,Semi-Detached,C,67,triple glazing,"Cavity wall, as built, no insulation",82,SW1A 41AA
+EPC_000033,Bungalow,Semi-Detached,C,69,double glazing,"Cavity wall, as built, no insulation",136,SW1A 42AA
+EPC_000034,Maisonette,End-Terrace,D,71,triple glazing,"Cavity wall, as built, no insulation",60,SW1A 43AA
+EPC_000035,House,Detached,C,70,triple glazing,"Cavity wall, filled cavity",176,SW1A 44AA
+EPC_000036,House,Semi-Detached,F,38,double glazing,"Cavity wall, as built, no insulation",124,SW1A 45AA
+EPC_000037,Flat,End-Terrace,E,38,triple glazing,"Cavity wall, filled cavity",132,SW1A 46AA
+EPC_000038,Bungalow,End-Terrace,C,52,double glazing,"Cavity wall, as built, no insulation",159,SW1A 47AA
+EPC_000039,Maisonette,End-Terrace,D,81,single glazing,"Cavity wall, as built, no insulation",76,SW1A 48AA
+EPC_000040,Maisonette,Semi-Detached,E,75,single glazing,"Solid brick, as built, no insulation",171,SW1A 49AA
+EPC_000041,House,Detached,D,72,double glazing,"Cavity wall, as built, no insulation",53,SW1A 50AA
+EPC_000042,Bungalow,End-Terrace,D,68,double glazing,"Cavity wall, filled cavity",140,SW1A 51AA
+EPC_000043,Bungalow,Detached,D,68,single glazing,"Cavity wall, filled cavity",94,SW1A 52AA
+EPC_000044,Bungalow,End-Terrace,C,75,double glazing,"Cavity wall, as built, no insulation",49,SW1A 53AA
+EPC_000045,House,Detached,C,46,double glazing,"Solid brick, as built, no insulation",80,SW1A 54AA
+EPC_000046,Flat,Mid-Terrace,C,82,double glazing,"Solid brick, as built, no insulation",151,SW1A 55AA
+EPC_000047,Bungalow,Mid-Terrace,C,47,single glazing,"Cavity wall, as built, no insulation",57,SW1A 56AA
+EPC_000048,Flat,Detached,D,52,double glazing,"Solid brick, as built, no insulation",138,SW1A 57AA
+EPC_000049,Bungalow,End-Terrace,F,45,double glazing,"Solid brick, as built, no insulation",92,SW1A 58AA
+EPC_000050,House,Mid-Terrace,D,48,double glazing,"Solid brick, as built, no insulation",55,SW1A 59AA
+EPC_000051,Maisonette,End-Terrace,B,67,double glazing,"Solid brick, as built, no insulation",81,SW1A 60AA
+EPC_000052,House,Semi-Detached,D,78,double glazing,"Solid brick, as built, no insulation",78,SW1A 61AA
+EPC_000053,Bungalow,End-Terrace,C,32,double glazing,"Cavity wall, filled cavity",99,SW1A 62AA
+EPC_000054,Bungalow,Semi-Detached,D,32,double glazing,"Cavity wall, as built, no insulation",116,SW1A 63AA
+EPC_000055,House,End-Terrace,B,61,double glazing,"Cavity wall, filled cavity",134,SW1A 64AA
+EPC_000056,Bungalow,Mid-Terrace,C,80,double glazing,"Solid brick, as built, no insulation",69,SW1A 65AA
+EPC_000057,Bungalow,Mid-Terrace,E,44,double glazing,"Cavity wall, filled cavity",113,SW1A 66AA
+EPC_000058,Maisonette,Mid-Terrace,C,36,single glazing,"Cavity wall, as built, no insulation",60,SW1A 67AA
+EPC_000059,House,Mid-Terrace,D,70,double glazing,"Solid brick, as built, no insulation",70,SW1A 68AA
+EPC_000060,House,End-Terrace,D,35,double glazing,"Cavity wall, filled cavity",55,SW1A 69AA
+EPC_000061,Bungalow,Semi-Detached,E,64,double glazing,"Cavity wall, filled cavity",150,SW1A 70AA
+EPC_000062,Maisonette,End-Terrace,E,61,double glazing,"Cavity wall, as built, no insulation",164,SW1A 71AA
+EPC_000063,Maisonette,End-Terrace,D,34,double glazing,"Cavity wall, as built, no insulation",59,SW1A 72AA
+EPC_000064,Flat,Semi-Detached,C,36,triple glazing,"Cavity wall, as built, no insulation",75,SW1A 73AA
+EPC_000065,House,Detached,C,50,single glazing,"Solid brick, as built, no insulation",167,SW1A 74AA
+EPC_000066,Maisonette,Mid-Terrace,E,48,double glazing,"Cavity wall, as built, no insulation",175,SW1A 75AA
+EPC_000067,Bungalow,Mid-Terrace,D,32,double glazing,"Cavity wall, as built, no insulation",155,SW1A 76AA
+EPC_000068,Bungalow,End-Terrace,C,85,double glazing,"Solid brick, as built, no insulation",78,SW1A 77AA
+EPC_000069,Bungalow,Semi-Detached,A,53,double glazing,"Cavity wall, as built, no insulation",98,SW1A 78AA
+EPC_000070,Bungalow,End-Terrace,C,53,triple glazing,"Cavity wall, as built, no insulation",106,SW1A 79AA
+EPC_000071,House,End-Terrace,C,75,single glazing,"Cavity wall, as built, no insulation",153,SW1A 80AA
+EPC_000072,House,Mid-Terrace,E,67,double glazing,"Solid brick, as built, no insulation",102,SW1A 81AA
+EPC_000073,House,Semi-Detached,E,82,double glazing,"Solid brick, as built, no insulation",176,SW1A 82AA
+EPC_000074,Maisonette,Semi-Detached,D,30,double glazing,"Cavity wall, filled cavity",106,SW1A 83AA
+EPC_000075,House,Semi-Detached,D,36,single glazing,"Cavity wall, filled cavity",174,SW1A 84AA
+EPC_000076,Flat,Mid-Terrace,E,87,double glazing,"Cavity wall, as built, no insulation",102,SW1A 85AA
+EPC_000077,House,Detached,B,69,double glazing,"Cavity wall, filled cavity",132,SW1A 86AA
+EPC_000078,Bungalow,Mid-Terrace,D,59,double glazing,"Cavity wall, as built, no insulation",107,SW1A 87AA
+EPC_000079,Bungalow,End-Terrace,B,63,single glazing,"Solid brick, as built, no insulation",117,SW1A 88AA
+EPC_000080,Bungalow,End-Terrace,C,81,double glazing,"Solid brick, as built, no insulation",62,SW1A 89AA
+EPC_000081,Flat,Detached,D,48,single glazing,"Cavity wall, as built, no insulation",88,SW1A 90AA
+EPC_000082,Flat,Detached,C,30,double glazing,"Solid brick, as built, no insulation",169,SW1A 91AA
+EPC_000083,House,Semi-Detached,D,31,single glazing,"Cavity wall, filled cavity",132,SW1A 92AA
+EPC_000084,House,Semi-Detached,A,40,double glazing,"Solid brick, as built, no insulation",158,SW1A 93AA
+EPC_000085,House,Mid-Terrace,B,52,double glazing,"Solid brick, as built, no insulation",95,SW1A 94AA
+EPC_000086,Bungalow,Semi-Detached,C,32,double glazing,"Solid brick, as built, no insulation",150,SW1A 95AA
+EPC_000087,Bungalow,Semi-Detached,C,68,double glazing,"Cavity wall, filled cavity",143,SW1A 96AA
+EPC_000088,Maisonette,Detached,D,42,double glazing,"Solid brick, as built, no insulation",95,SW1A 97AA
+EPC_000089,Bungalow,Semi-Detached,C,63,double glazing,"Cavity wall, filled cavity",60,SW1A 98AA
+EPC_000090,Maisonette,Detached,F,45,double glazing,"Solid brick, as built, no insulation",128,SW1A 99AA
+EPC_000091,Maisonette,Semi-Detached,C,72,triple glazing,"Solid brick, as built, no insulation",142,SW1A 10AA
+EPC_000092,Bungalow,End-Terrace,D,37,single glazing,"Cavity wall, filled cavity",170,SW1A 11AA
+EPC_000093,House,Mid-Terrace,D,31,single glazing,"Solid brick, as built, no insulation",159,SW1A 12AA
+EPC_000094,Bungalow,Detached,G,80,double glazing,"Cavity wall, filled cavity",106,SW1A 13AA
+EPC_000095,House,Detached,D,75,single glazing,"Solid brick, as built, no insulation",136,SW1A 14AA
+EPC_000096,Bungalow,Semi-Detached,C,83,single glazing,"Cavity wall, as built, no insulation",46,SW1A 15AA
+EPC_000097,House,Detached,C,34,double glazing,"Solid brick, as built, no insulation",96,SW1A 16AA
+EPC_000098,Maisonette,Mid-Terrace,D,72,double glazing,"Solid brick, as built, no insulation",121,SW1A 17AA
+EPC_000099,Maisonette,Detached,C,69,double glazing,"Cavity wall, filled cavity",56,SW1A 18AA
+EPC_000100,Maisonette,Detached,C,31,double glazing,"Cavity wall, as built, no insulation",80,SW1A 19AA
+EPC_000101,Bungalow,Semi-Detached,D,35,double glazing,"Cavity wall, as built, no insulation",80,SW1A 20AA
+EPC_000102,Bungalow,Detached,C,33,double glazing,"Solid brick, as built, no insulation",128,SW1A 21AA
+EPC_000103,Maisonette,Semi-Detached,C,58,double glazing,"Cavity wall, filled cavity",173,SW1A 22AA
+EPC_000104,Bungalow,Detached,D,80,double glazing,"Cavity wall, filled cavity",103,SW1A 23AA
+EPC_000105,Maisonette,Mid-Terrace,C,32,double glazing,"Cavity wall, as built, no insulation",69,SW1A 24AA
+EPC_000106,Flat,Detached,D,57,double glazing,"Cavity wall, as built, no insulation",151,SW1A 25AA
+EPC_000107,Maisonette,End-Terrace,F,81,double glazing,"Cavity wall, filled cavity",165,SW1A 26AA
+EPC_000108,Flat,Detached,C,44,double glazing,"Solid brick, as built, no insulation",123,SW1A 27AA
+EPC_000109,Flat,End-Terrace,D,42,double glazing,"Solid brick, as built, no insulation",72,SW1A 28AA
+EPC_000110,Flat,Mid-Terrace,C,86,single glazing,"Solid brick, as built, no insulation",153,SW1A 29AA
+EPC_000111,Maisonette,Detached,D,34,double glazing,"Cavity wall, as built, no insulation",72,SW1A 30AA
+EPC_000112,Maisonette,End-Terrace,D,53,single glazing,"Cavity wall, as built, no insulation",66,SW1A 31AA
+EPC_000113,Maisonette,End-Terrace,E,43,double glazing,"Cavity wall, filled cavity",152,SW1A 32AA
+EPC_000114,Bungalow,End-Terrace,C,48,double glazing,"Cavity wall, as built, no insulation",107,SW1A 33AA
+EPC_000115,House,End-Terrace,C,66,double glazing,"Cavity wall, filled cavity",87,SW1A 34AA
+EPC_000116,Bungalow,Mid-Terrace,C,34,single glazing,"Cavity wall, filled cavity",176,SW1A 35AA
+EPC_000117,Bungalow,End-Terrace,C,55,double glazing,"Cavity wall, filled cavity",61,SW1A 36AA
+EPC_000118,Maisonette,Mid-Terrace,D,52,double glazing,"Cavity wall, filled cavity",121,SW1A 37AA
+EPC_000119,Flat,Mid-Terrace,E,70,double glazing,"Solid brick, as built, no insulation",171,SW1A 38AA
+EPC_000120,Maisonette,Detached,G,37,double glazing,"Cavity wall, as built, no insulation",131,SW1A 39AA
+EPC_000121,Bungalow,End-Terrace,C,72,double glazing,"Cavity wall, as built, no insulation",65,SW1A 40AA
+EPC_000122,House,Detached,C,32,double glazing,"Solid brick, as built, no insulation",89,SW1A 41AA
+EPC_000123,Bungalow,Mid-Terrace,E,49,double glazing,"Solid brick, as built, no insulation",75,SW1A 42AA
+EPC_000124,Bungalow,Semi-Detached,D,49,double glazing,"Solid brick, as built, no insulation",141,SW1A 43AA
+EPC_000125,House,End-Terrace,D,34,double glazing,"Cavity wall, as built, no insulation",81,SW1A 44AA
+EPC_000126,Bungalow,Semi-Detached,D,73,triple glazing,"Cavity wall, filled cavity",134,SW1A 45AA
+EPC_000127,Maisonette,Mid-Terrace,D,78,double glazing,"Solid brick, as built, no insulation",172,SW1A 46AA
+EPC_000128,Maisonette,Detached,E,55,double glazing,"Cavity wall, as built, no insulation",79,SW1A 47AA
+EPC_000129,Flat,Detached,D,46,double glazing,"Cavity wall, as built, no insulation",138,SW1A 48AA
+EPC_000130,Flat,Mid-Terrace,C,31,double glazing,"Solid brick, as built, no insulation",74,SW1A 49AA
+EPC_000131,House,Detached,C,81,double glazing,"Cavity wall, filled cavity",56,SW1A 50AA
+EPC_000132,Flat,Detached,G,32,double glazing,"Solid brick, as built, no insulation",143,SW1A 51AA
+EPC_000133,House,Mid-Terrace,C,39,double glazing,"Cavity wall, filled cavity",109,SW1A 52AA
+EPC_000134,Bungalow,Mid-Terrace,C,67,double glazing,"Solid brick, as built, no insulation",62,SW1A 53AA
+EPC_000135,Maisonette,End-Terrace,D,31,double glazing,"Cavity wall, as built, no insulation",90,SW1A 54AA
+EPC_000136,House,Detached,D,54,double glazing,"Solid brick, as built, no insulation",177,SW1A 55AA
+EPC_000137,Bungalow,Semi-Detached,D,50,double glazing,"Cavity wall, as built, no insulation",61,SW1A 56AA
+EPC_000138,Bungalow,End-Terrace,D,47,single glazing,"Cavity wall, filled cavity",125,SW1A 57AA
+EPC_000139,Flat,Semi-Detached,D,78,double glazing,"Cavity wall, as built, no insulation",79,SW1A 58AA
+EPC_000140,Maisonette,End-Terrace,C,83,double glazing,"Solid brick, as built, no insulation",138,SW1A 59AA
+EPC_000141,Bungalow,Detached,E,51,double glazing,"Solid brick, as built, no insulation",131,SW1A 60AA
+EPC_000142,Flat,End-Terrace,C,63,double glazing,"Cavity wall, as built, no insulation",76,SW1A 61AA
+EPC_000143,House,Mid-Terrace,C,71,double glazing,"Cavity wall, filled cavity",65,SW1A 62AA
+EPC_000144,House,Mid-Terrace,E,74,double glazing,"Cavity wall, filled cavity",121,SW1A 63AA
+EPC_000145,Bungalow,Mid-Terrace,F,66,triple glazing,"Solid brick, as built, no insulation",61,SW1A 64AA
+EPC_000146,Bungalow,Detached,D,68,double glazing,"Solid brick, as built, no insulation",95,SW1A 65AA
+EPC_000147,Bungalow,Semi-Detached,E,59,double glazing,"Solid brick, as built, no insulation",150,SW1A 66AA
+EPC_000148,Maisonette,Mid-Terrace,D,62,double glazing,"Cavity wall, filled cavity",103,SW1A 67AA
+EPC_000149,Bungalow,End-Terrace,D,35,triple glazing,"Solid brick, as built, no insulation",141,SW1A 68AA
+EPC_000150,Maisonette,Semi-Detached,C,42,double glazing,"Cavity wall, as built, no insulation",68,SW1A 69AA
+EPC_000151,Flat,Detached,C,49,triple glazing,"Cavity wall, as built, no insulation",122,SW1A 70AA
+EPC_000152,Flat,End-Terrace,C,63,triple glazing,"Cavity wall, filled cavity",171,SW1A 71AA
+EPC_000153,Maisonette,Detached,C,42,double glazing,"Solid brick, as built, no insulation",160,SW1A 72AA
+EPC_000154,Bungalow,Detached,D,78,double glazing,"Cavity wall, filled cavity",101,SW1A 73AA
+EPC_000155,Maisonette,Semi-Detached,C,71,double glazing,"Cavity wall, as built, no insulation",64,SW1A 74AA
+EPC_000156,House,End-Terrace,E,51,double glazing,"Cavity wall, filled cavity",129,SW1A 75AA
+EPC_000157,Flat,Detached,A,50,double glazing,"Cavity wall, filled cavity",100,SW1A 76AA
+EPC_000158,Maisonette,Semi-Detached,B,84,single glazing,"Cavity wall, as built, no insulation",130,SW1A 77AA
+EPC_000159,Flat,Detached,D,43,double glazing,"Cavity wall, as built, no insulation",46,SW1A 78AA
+EPC_000160,Maisonette,End-Terrace,C,65,double glazing,"Cavity wall, filled cavity",171,SW1A 79AA
+EPC_000161,Flat,Mid-Terrace,E,34,double glazing,"Cavity wall, as built, no insulation",50,SW1A 80AA
+EPC_000162,Maisonette,Detached,C,82,single glazing,"Cavity wall, filled cavity",87,SW1A 81AA
+EPC_000163,Flat,Semi-Detached,E,49,double glazing,"Cavity wall, filled cavity",57,SW1A 82AA
+EPC_000164,Flat,Mid-Terrace,B,85,single glazing,"Cavity wall, as built, no insulation",52,SW1A 83AA
+EPC_000165,Bungalow,Mid-Terrace,G,86,double glazing,"Cavity wall, filled cavity",138,SW1A 84AA
+EPC_000166,Bungalow,Mid-Terrace,F,71,double glazing,"Solid brick, as built, no insulation",137,SW1A 85AA
+EPC_000167,Maisonette,Detached,G,69,triple glazing,"Cavity wall, filled cavity",132,SW1A 86AA
+EPC_000168,Bungalow,End-Terrace,B,41,double glazing,"Cavity wall, as built, no insulation",104,SW1A 87AA
+EPC_000169,Maisonette,End-Terrace,F,76,single glazing,"Solid brick, as built, no insulation",150,SW1A 88AA
+EPC_000170,House,Mid-Terrace,D,69,triple glazing,"Cavity wall, filled cavity",113,SW1A 89AA
+EPC_000171,Bungalow,Detached,D,58,double glazing,"Cavity wall, filled cavity",120,SW1A 90AA
+EPC_000172,House,Mid-Terrace,C,64,double glazing,"Cavity wall, as built, no insulation",132,SW1A 91AA
+EPC_000173,Bungalow,Semi-Detached,E,84,double glazing,"Solid brick, as built, no insulation",111,SW1A 92AA
+EPC_000174,Bungalow,Mid-Terrace,B,79,double glazing,"Cavity wall, as built, no insulation",136,SW1A 93AA
+EPC_000175,Flat,End-Terrace,E,67,double glazing,"Cavity wall, as built, no insulation",160,SW1A 94AA
+EPC_000176,Flat,Semi-Detached,C,80,triple glazing,"Solid brick, as built, no insulation",132,SW1A 95AA
+EPC_000177,Maisonette,End-Terrace,D,41,double glazing,"Cavity wall, as built, no insulation",100,SW1A 96AA
+EPC_000178,Flat,Detached,D,76,double glazing,"Cavity wall, as built, no insulation",58,SW1A 97AA
+EPC_000179,Bungalow,Mid-Terrace,E,41,single glazing,"Cavity wall, as built, no insulation",169,SW1A 98AA
+EPC_000180,Maisonette,Mid-Terrace,B,49,double glazing,"Cavity wall, as built, no insulation",92,SW1A 99AA
+EPC_000181,Flat,Detached,E,55,triple glazing,"Solid brick, as built, no insulation",76,SW1A 10AA
+EPC_000182,Maisonette,Semi-Detached,B,62,double glazing,"Solid brick, as built, no insulation",82,SW1A 11AA
+EPC_000183,Bungalow,End-Terrace,E,70,triple glazing,"Solid brick, as built, no insulation",77,SW1A 12AA
+EPC_000184,House,End-Terrace,E,67,triple glazing,"Cavity wall, filled cavity",93,SW1A 13AA
+EPC_000185,Bungalow,Detached,D,57,double glazing,"Solid brick, as built, no insulation",114,SW1A 14AA
+EPC_000186,Maisonette,End-Terrace,B,60,single glazing,"Cavity wall, as built, no insulation",136,SW1A 15AA
+EPC_000187,Bungalow,Mid-Terrace,C,58,double glazing,"Solid brick, as built, no insulation",48,SW1A 16AA
+EPC_000188,Flat,Detached,D,79,double glazing,"Cavity wall, as built, no insulation",118,SW1A 17AA
+EPC_000189,Bungalow,Semi-Detached,C,52,single glazing,"Solid brick, as built, no insulation",113,SW1A 18AA
+EPC_000190,House,Mid-Terrace,E,40,double glazing,"Cavity wall, filled cavity",129,SW1A 19AA
+EPC_000191,Flat,Detached,A,47,double glazing,"Cavity wall, as built, no insulation",118,SW1A 20AA
+EPC_000192,Flat,Mid-Terrace,D,35,double glazing,"Cavity wall, filled cavity",120,SW1A 21AA
+EPC_000193,Bungalow,Detached,D,51,double glazing,"Solid brick, as built, no insulation",75,SW1A 22AA
+EPC_000194,Flat,Mid-Terrace,C,34,double glazing,"Solid brick, as built, no insulation",50,SW1A 23AA
+EPC_000195,House,End-Terrace,D,35,double glazing,"Solid brick, as built, no insulation",126,SW1A 24AA
+EPC_000196,House,End-Terrace,E,79,double glazing,"Solid brick, as built, no insulation",172,SW1A 25AA
+EPC_000197,House,End-Terrace,D,59,double glazing,"Solid brick, as built, no insulation",115,SW1A 26AA
+EPC_000198,House,Mid-Terrace,D,71,double glazing,"Cavity wall, as built, no insulation",73,SW1A 27AA
+EPC_000199,House,Mid-Terrace,D,82,triple glazing,"Cavity wall, filled cavity",114,SW1A 28AA
+EPC_000200,Bungalow,Mid-Terrace,D,68,double glazing,"Cavity wall, as built, no insulation",76,SW1A 29AA

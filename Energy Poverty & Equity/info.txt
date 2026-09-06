@@ -1,0 +1,15 @@
+datasets
+
+1. fuel-poverty-sub-regional-2026-2024-data-tables.xlsx [per brief]
+
+2. File_1_-_IMD2019_Index_of_Multiple_Deprivation.xlsx [per brief]
+
+3. anonymised-NEED-data-2024-50k.csv [per brief]
+
+4. lsoa_domestic_gas_2024.xlsx [added dataset] https://www.gov.uk/government/statistics/lower-and-middle-super-output-areas-gas-consumption (shows household gas heating usage per neighborhood so teams can identify gas-heated fuel-poor areas).
+
+5. lso_domestic_elec_2024.xls [added dataset] https://www.gov.uk/government/statistics/lower-and-middle-super-output-areas-electricity-consumption (shows household electricity usage per neighborhood so teams can spot off-gas grid households relying on expensive electric space heating).
+
+6. Lower_layer_Super_Output_Areas_December_2021_Boundaries_EW_BGC_V5_-3761339731474027792.geojson [added dataset] https://geoportal.statistics.gov.uk/datasets/ons::lower-layer-super-output-areas-december-2021-boundaries-ew-bgc-v5-2/about (provides boundary shapes so teams can draw interactive visual maps of fuel poverty risk across England).
+
+7. Lower_layer_Super_Output_Areas_December_2021_Boundaries_EW_BGC_V5_-2396357146983558782.csv [added dataset] https://geoportal.statistics.gov.uk/datasets/ons::lower-layer-super-output-areas-december-2021-boundaries-ew-bgc-v5-2/about  (provides area names, codes, and coordinates for geographic data lookups).

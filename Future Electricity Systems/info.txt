@@ -1,0 +1,9 @@
+datasets
+
+1. gb_carbon_intensity_30min_2024.csv [per brief] endpoint: https://api.carbonintensity.org.uk/intensity/date/YYYY-MM-DD
+
+2. gb_generation_mix_30min_2024.csv [per brief] endpoint: https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream
+
+3. subnational_electricity_consumption_statistics_2024 [per brief] https://www.gov.uk/government/statistics/regional-and-local-authority-electricity-consumption-statistics
+
+4. octopus_agile_tariffs_30min_2024_full [added dataset] endpoint: https://api.octopus.energy/v1/products/AGILE-24-10-01/electricity-tariffs/E-1R-AGILE-24-10-01-A/standard-unit-rates/ (provides 30-minute electricity prices so teams can calculate actual money saved when shifting power usage away from peak hours).
