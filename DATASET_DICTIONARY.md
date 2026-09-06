@@ -7,7 +7,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 
 ---
 
-# 🟢 Track 01: Energy Poverty & Equity
+# Track 01: Energy Poverty & Equity
 
 ### Challenge Objective
 *“Where in England does fuel-poverty risk concentrate most once you account for both household vulnerability and poor housing efficiency, and where would a fixed budget cut that risk most?”*
@@ -113,7 +113,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 
 ---
 
-# ⚡ Track 02: Future Electricity Systems
+# Track 02: Future Electricity Systems
 
 ### Challenge Objective
 *“Using real GB electricity data, how much carbon (and cost) could a defined flexible load save by shifting when it runs, and what would it take to unlock that flexibility (including reducing peak Gas CCGT and Interconnector reliance)?”*
@@ -181,7 +181,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 
 ---
 
-# 🏠 Track 03: Heat, Buildings & Decarbonisation
+# Track 03: Heat, Buildings & Decarbonisation
 
 ### Challenge Objective
 *“Across real heat-pump homes, which are most at risk of cold surfaces, damp and condensation, and does the assessment method change the answer (Glaser monthly-average vs. measured overnight-minimum under Awaab's Law)?”*
@@ -259,11 +259,11 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 
 ---
 
-# 💻 Python Ingestion Scripts (Reproduce All Downloads)
+# Python Ingestion Scripts (Reproduce All Downloads)
 
 Below are the complete, runnable Python scripts used to download, extract, and sort every dataset directly from the official APIs and data endpoints.
 
-### Script 1: Fetch Full-Year 2024 Grid Timeseries (Track 03)
+### Script 1: Fetch Full-Year 2024 Grid Timeseries (Track 02)
 ```python
 import os
 import time
