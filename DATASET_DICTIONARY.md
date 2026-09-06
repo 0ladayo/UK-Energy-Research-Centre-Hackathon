@@ -1,13 +1,13 @@
 # UKERC Energy Hackathon — Complete Data Dictionary & Dataset Guide
 
 This document provides a comprehensive data dictionary, schema guide, and reproducible Python source code for all datasets across the three hackathon challenge tracks:
-1. **Track 02: Energy Poverty & Equity**
-2. **Track 03: Future Electricity Systems**
-3. **Track 04: Heat, Buildings & Decarbonisation**
+1. **Track 01: Energy Poverty & Equity**
+2. **Track 02: Future Electricity Systems**
+3. **Track 03: Heat, Buildings & Decarbonisation**
 
 ---
 
-# 🟢 Track 02: Energy Poverty & Equity
+# 🟢 Track 01: Energy Poverty & Equity
 
 ### Challenge Objective
 *“Where in England does fuel-poverty risk concentrate most once you account for both household vulnerability and poor housing efficiency, and where would a fixed budget cut that risk most?”*
@@ -113,7 +113,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 
 ---
 
-# ⚡ Track 03: Future Electricity Systems
+# ⚡ Track 02: Future Electricity Systems
 
 ### Challenge Objective
 *“Using real GB electricity data, how much carbon (and cost) could a defined flexible load save by shifting when it runs, and what would it take to unlock that flexibility (including reducing peak Gas CCGT and Interconnector reliance)?”*
@@ -181,7 +181,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 
 ---
 
-# 🏠 Track 04: Heat, Buildings & Decarbonisation
+# 🏠 Track 03: Heat, Buildings & Decarbonisation
 
 ### Challenge Objective
 *“Across real heat-pump homes, which are most at risk of cold surfaces, damp and condensation, and does the assessment method change the answer (Glaser monthly-average vs. measured overnight-minimum under Awaab's Law)?”*
@@ -361,7 +361,7 @@ df_agile.to_csv("octopus_agile_tariffs_30min_2024_full.csv", index=False)
 
 ---
 
-### Script 2: Fetch Cold-Snap Weather Data (Track 04)
+### Script 2: Fetch Cold-Snap Weather Data (Track 03)
 ```python
 import requests
 import pandas as pd
@@ -383,7 +383,7 @@ if r.status_code == 200:
 
 ---
 
-### Script 3: Restore Official IMD 2019 Dataset (Track 02)
+### Script 3: Restore Official IMD 2019 Dataset (Track 01)
 ```python
 import requests
 import re
