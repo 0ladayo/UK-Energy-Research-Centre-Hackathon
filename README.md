@@ -1,6 +1,6 @@
-# Engineering & Energy Hackathon 2026
+# Energy Hackathon 2026
 
-Welcome to the **Engineering & Energy Hackathon 2026** workspace! 
+Welcome to the **Engineering & Energy Research Hackathon 2026** workspace! 
 
 This hackathon is sponsored by **UKERC** (UK Energy Research Centre), **Supergen Energy Networks**, **SuperAIRE**, and **EDRC** (Energy Demand Research Centre).
 
@@ -107,9 +107,10 @@ UK-Energy-Research-Centre-Hackathon/
 │   ├── track_01_energy_poverty_equity_starter.ipynb
 │   ├── track_02_future_electricity_systems_starter.ipynb
 │   └── track_03_heat_buildings_decarbonisation_starter.ipynb
-├── Energy Poverty & Equity/           # Track 01 datasets
-├── Future Electricity Systems/        # Track 02 datasets
-└── Heat, Buildings & Decarbonisation/ # Track 03 datasets
+└── datasets/
+    ├── Energy Poverty & Equity/           # Track 01 datasets
+    ├── Future Electricity Systems/        # Track 02 datasets
+    └── Heat, Buildings & Decarbonisation/ # Track 03 datasets
 ```
 
 ---
