@@ -1,6 +1,6 @@
-# Energy Hackathon 2026
+# Energy Research Hackathon 2026
 
-Welcome to the **Engineering & Energy Research Hackathon 2026** workspace! 
+Welcome to the **Energy Research Hackathon 2026** workspace! 
 
 This hackathon is sponsored by **UKERC** (UK Energy Research Centre), **Supergen Energy Networks**, **SuperAIRE**, and **EDRC** (Energy Demand Research Centre).
 
