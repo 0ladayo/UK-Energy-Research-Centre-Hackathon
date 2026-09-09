@@ -10,7 +10,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 # Track 01: Energy Poverty & Equity
 
 ### Challenge Objective
-*“Where in England does fuel-poverty risk concentrate most once you account for both household vulnerability and poor housing efficiency, and where would a fixed budget cut that risk most?”*
+*“In which local neighbourhoods (LSOAs) is fuel poverty risk the highest when considering both low household income and energy-inefficient homes? If you had a fixed support budget, where should you spend it to reduce that risk the most?”*
 
 ---
 
@@ -20,15 +20,19 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 * **Temporal Coverage**: 2024 Data (2026 Release)
 * **Geographic Resolution**: Lower Layer Super Output Area (LSOA 2021)
 * **Purpose**: Primary target outcome variable. Provides the count and percentage of households in fuel poverty under the official **Low Income Low Energy Efficiency (LILEE)** metric.
+* **Key Sheets**:
+  * **`Table 4`** (Recommended for LSOA analysis): Fuel Poverty by Lower Layer Super Output Area (`header=2`).
+  * **`Table 2`**: Fuel Poverty summary by Local Authority District (`header=2`).
+  * **`Table 1`**: Regional summary totals (`header=2`).
 
-### Key Columns & Data Dictionary (Table 4)
+### Key Columns & Data Dictionary (Sheet: `Table 4`)
 | Column Name | Type | Description & Units |
 | :--- | :--- | :--- |
 | `LSOA Code` | String | 2021 LSOA census code (e.g. `E01000001`). Primary join key. |
-| `LSOA Name` | String | LSOA name (e.g. `City of London 001A`). |
+| `LSOA Name` | String | LSOA identifier name (e.g. `City of London 001A`). |
 | `Local Authority Code` | String | Local Authority district code (e.g. `E09000001`). |
-| `Local Authority Name` | String | Council/District name (e.g. `City of London`, `Barking and Dagenham`). |
-| `Region` | String | Government Office Region (e.g. `London`, `North West`). |
+| `Local Authority Name` | String | Council/District name (e.g. `City of London`, `Hartlepool`). |
+| `Region` | String | Government Office Region (e.g. `London`, `North East`). |
 | `Number of households` | Integer | Total estimated residential households in the LSOA. |
 | `Number of households in fuel poverty` | Integer | Estimated count of households classified as fuel poor under LILEE. |
 | `Proportion of households fuel poor (%)` | Float | Percentage of households in fuel poverty ($0.0\% - 100.0\%$). |
@@ -40,83 +44,123 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 * **Official URL**: [English Indices of Deprivation 2019](https://www.gov.uk/government/statistics/english-indices-of-deprivation-2019)
 * **Temporal Coverage**: 2019 Benchmark (Standard official deprivation layer)
 * **Geographic Resolution**: LSOA 2011 (Maps 1-to-1 to 2021 LSOAs for >95% of areas)
-* **Purpose**: Measures multi-dimensional household vulnerability (Income, Health, Employment, Living Environment).
+* **Purpose**: Measures multi-dimensional household vulnerability and relative socio-economic deprivation.
+* **Key Sheet**: **`IMD2019`** (`header=0`). *(Note: Sheet 0 is a notes cover sheet).*
 
-### Key Columns & Data Dictionary
+### Key Columns & Data Dictionary (Sheet: `IMD2019`)
 | Column Name | Type | Description & Units |
 | :--- | :--- | :--- |
-| `LSOA code (2011)` | String | 2011 LSOA code (e.g. `E01000001`). Join key. |
-| `LSOA name (2011)` | String | LSOA identifier name. |
-| `Index of Multiple Deprivation (IMD) Score` | Float | Composite deprivation score (higher = more deprived). |
-| `Index of Multiple Deprivation (IMD) Rank` | Integer | Nationwide rank out of 32,844 LSOAs (1 = most deprived). |
-| `Index of Multiple Deprivation (IMD) Decile` | Integer | Nationwide decile ($1 = 10\%$ most deprived, $10 = 10\%$ least deprived). |
-| `Income Score (rate)` | Float | Proportion of population experiencing income deprivation. |
-| `Employment Score (rate)` | Float | Proportion of working-age population experiencing employment deprivation. |
-| `Barriers to Housing and Services Score` | Float | Physical and financial barriers to housing and local services. |
-| `Living Environment Score` | Float | Quality of local indoor and outdoor living environment. |
+| `LSOA code (2011)` | String | 2011 LSOA code (e.g. `E01000001`). Primary join key. |
+| `LSOA name (2011)` | String | LSOA identifier name (e.g. `City of London 001A`). |
+| `Local Authority District code (2019)` | String | Local Authority District code (e.g. `E09000001`). |
+| `Local Authority District name (2019)` | String | Local Authority District name. |
+| `Index of Multiple Deprivation (IMD) Rank` | Integer | Nationwide rank across all 32,844 LSOAs ($1 = \text{most deprived}$, $32,844 = \text{least deprived}$). |
+| `Index of Multiple Deprivation (IMD) Decile` | Integer | Nationwide decile ($1 = 10\%\text{ most deprived}$, $10 = 10\%\text{ least deprived}$). |
 
 ---
 
 ## 3. `anonymised-NEED-data-2024-50k.csv` [Per Brief]
 * **Source**: DESNZ National Energy Efficiency Data-Framework (NEED)
 * **Official URL**: [GOV.UK NEED Anonymised Microdata 2024](https://www.gov.uk/government/statistics/national-energy-efficiency-data-framework-need-anonymised-data-2024)
-* **Temporal Coverage**: 2024 (50,000 property-level records)
-* **Purpose**: Property-level microdata linking building fabric characteristics, EPC ratings, and actual annual gas/electricity consumption.
+* **Temporal Coverage**: 2024 Release (50,000 property-level microdata records across England & Wales)
+* **Purpose**: Property-level microdata linking dwelling archetypes, energy efficiency installations, and real annual gas/electricity consumption.
 
 ### Key Columns & Data Dictionary
 | Column Name | Type | Description & Units |
 | :--- | :--- | :--- |
 | `PROP_TYPE` | Categorical | Property style (`1`=Detached, `2`=Semi-Detached, `3`=End-Terrace, `4`=Mid-Terrace, `5`=Bungalow, `6`=Flat). |
 | `PROP_AGE_BAND` | Categorical | Construction era (`1`=Pre-1919, `2`=1919-44, `3`=1945-64, `4`=1965-82, `5`=1983-92, `6`=1993-99, `7`=Post-1999). |
-| `FLOOR_AREA_BAND` | Categorical | Usable floor area range (`1`=<50m², `2`=51-100m², `3`=101-150m², `4`=151-200m², `5`=>200m²). |
-| `EPC` | Categorical | Energy Performance Certificate rating band (`A` to `G`). |
-| `CWI_FLAG` | Binary (`0`/`1`) | Cavity Wall Insulation installed (`1` = Yes, `0` = No). |
-| `LI_FLAG` | Binary (`0`/`1`) | Loft Insulation installed (`1` = Yes, `0` = No). |
-| `MAIN_HEAT_FUEL` | Categorical | Primary heating fuel (`1`=Mains Gas, `2`=Electricity, `3`=Oil, `4`=Solid Fuel, `5`=Biomass). |
-| `Gcons2022` | Float | Annual domestic gas consumption ($\text{kWh}$). |
-| `Econs2022` | Float | Annual domestic electricity consumption ($\text{kWh}$). |
+| `FLOOR_AREA_BAND` | Categorical | Usable floor area band (`1`=<50m², `2`=51-100m², `3`=101-150m², `4`=151-200m², `5`=>200m²). |
+| `COUNCIL_TAX_BAND` | Categorical | Valuation band (`1`=Band A, `2`=Band B, `3`=Band C, `4`=Band D, `5`=Band E, `6`=Band F, `7`=Band G, `8`=Band H). |
+| `IMD_BAND_ENG` | Categorical | English IMD Decile of the property's location ($1 = \text{most deprived}$, $10 = \text{least deprived}$). |
+| `REGION` | Categorical | Government region code. |
+| `EPC` | Categorical | Energy Performance Certificate current rating band (`A` to `G`). |
+| `CWI_FLAG` | Binary (`0`/`1`) | Cavity Wall Insulation recorded (`1` = Installed, `0` = Not installed). |
+| `LI_FLAG` | Binary (`0`/`1`) | Loft Insulation recorded (`1` = Installed, `0` = Not installed). |
+| `PV_FLAG` | Binary (`0`/`1`) | Solar Photovoltaics (solar panels) recorded (`1` = Installed, `0` = Not installed). |
+| `CONSERVATORY_FLAG` | Binary (`0`/`1`) | Property has an added conservatory (`1` = Yes, `0` = No). |
+| `MAIN_HEAT_FUEL` | Categorical | Primary heating fuel type (`1`=Mains Gas, `2`=Electricity, `3`=Oil, `4`=Solid Fuel, `5`=Biomass). |
+| `Gcons2022` | Float | Measured annual domestic gas consumption for 2022 ($\text{kWh}$). |
+| `Econs2022` | Float | Measured annual domestic electricity consumption for 2022 ($\text{kWh}$). |
+| `Gcons2005`–`Gcons2021` | Float | Historical annual gas consumption series ($\text{kWh}$). |
+| `Econs2005`–`Econs2021` | Float | Historical annual electricity consumption series ($\text{kWh}$). |
 
 ---
 
 ## 4. `lsoa_domestic_gas_2024.xlsx` [Added Dataset]
 * **Source**: DESNZ Sub-national Gas Consumption Statistics
 * **Official URL**: [GOV.UK LSOA Gas Consumption Data](https://www.gov.uk/government/statistics/lower-and-middle-super-output-areas-gas-consumption)
-* **Purpose**: Quantifies domestic heating energy usage ($\text{kWh}$) per neighborhood.
+* **Temporal Coverage**: 2024 (Weather-corrected estimates)
+* **Geographic Resolution**: LSOA 2021 (Great Britain)
+* **Purpose**: Quantifies weather-corrected domestic heating gas consumption per neighbourhood.
+* **Key Sheet**: **`2024`** (`header=4`).
 
-### Key Columns
-* `LSOA Code` (String): Join key.
-* `Number of meters` (Integer): Total residential gas meters in the LSOA.
-* `Total consumption (kWh)` (Float): Aggregate domestic gas consumption.
-* `Mean consumption (kWh per meter)` (Float): Average household gas heating consumption.
-* `Median consumption (kWh per meter)` (Float): Median household gas heating consumption.
+### Key Columns & Data Dictionary (Sheet: `2024`)
+| Column Name in File | Type | Description & Units |
+| :--- | :--- | :--- |
+| `Local authority code` | String | Local Authority district code (e.g. `E06000001`). |
+| `Local authority` | String | Local Authority name (e.g. `Hartlepool`). |
+| `MSOA code` | String | Middle Layer Super Output Area code. |
+| `Middle layer super output area` | String | MSOA name. |
+| `LSOA code` | String | 2021 LSOA code (e.g. `E01011954`). Primary join key. |
+| `Lower layer super output area` | String | LSOA neighbourhood name. |
+| `Number of meters` | Integer | Total active domestic gas meters in the LSOA. |
+| `Total consumption (kWh)` | Float | Total weather-corrected domestic gas usage in the LSOA ($\text{kWh}$). |
+| `Mean consumption (kWh per meter)` | Float | Average gas consumption per meter ($\text{kWh}$). |
+| `Median consumption (kWh per meter)` | Float | Median gas consumption per meter ($\text{kWh}$). Preferred over mean for skewed distributions. |
+| `Number of non-consuming meters` | Integer | Count of meters with 0 consumption recorded. |
 
 ---
 
 ## 5. `lso_domestic_elec_2024.xlsx` [Added Dataset]
 * **Source**: DESNZ Sub-national Electricity Consumption Statistics
 * **Official URL**: [GOV.UK LSOA Electricity Consumption Data](https://www.gov.uk/government/statistics/lower-and-middle-super-output-areas-electricity-consumption)
-* **Purpose**: Identifies off-gas grid households relying on electric space heating (visible as spikes in electricity $\text{kWh}$).
+* **Temporal Coverage**: 2024
+* **Geographic Resolution**: LSOA 2021 (Great Britain)
+* **Purpose**: Identifies baseline domestic electricity usage and off-gas grid electric heating spikes.
+* **Key Sheet**: **`2024`** (`header=4`).
 
-### Key Columns
-* `LSOA Code` (String): Join key.
-* `Number of domestic meters` (Integer): Domestic electricity meters.
-* `Total domestic consumption (kWh)` (Float): Total domestic electricity usage.
-* `Mean domestic consumption (kWh per meter)` (Float): Average domestic electricity usage.
-* `Median domestic consumption (kWh per meter)` (Float): Median domestic electricity usage.
+### Key Columns & Data Dictionary (Sheet: `2024`)
+| Column Name in File | Type | Description & Units |
+| :--- | :--- | :--- |
+| `Local authority code` | String | Local Authority district code. |
+| `Local authority` | String | Local Authority name. |
+| `MSOA code` | String | Middle Layer Super Output Area code. |
+| `Middle layer super output area` | String | MSOA name. |
+| `LSOA code` | String | 2021 LSOA code. Primary join key. |
+| `Lower layer super output area` | String | LSOA neighbourhood name. |
+| `Number of meters` | Integer | Total active domestic electricity meters in the LSOA. |
+| `Total consumption (kWh)` | Float | Total domestic electricity usage in the LSOA ($\text{kWh}$). |
+| `Mean consumption (kWh per meter)` | Float | Average electricity consumption per meter ($\text{kWh}$). |
+| `Median consumption (kWh per meter)` | Float | Median electricity consumption per meter ($\text{kWh}$). |
 
 ---
 
-## 6. `Lower_layer_Super_Output_Areas_...geojson` & `...csv` [Added Dataset]
+## 6. LSOA Boundaries: GeoJSON & Centroid CSV [Added Dataset]
+* **Files**: 
+  * `Lower_layer_Super_Output_Areas_...geojson` (Polygon spatial boundaries for GIS/mapping)
+  * `Lower_layer_Super_Output_Areas_...csv` (Centroid lookup table)
 * **Source**: Office for National Statistics (ONS) Open Geography Portal
 * **Official URL**: [ONS Geoportal LSOA 2021 Boundaries](https://geoportal.statistics.gov.uk/datasets/ons::lower-layer-super-output-areas-december-2021-boundaries-ew-bgc-v5-2/about)
-* **Purpose**: Spatial boundary polygons for creating interactive choropleth maps and GIS visualizations in Python (`GeoPandas`, `Folium`, `Plotly`) or QGIS.
+* **Purpose**: Provides geometry polygons for interactive maps (`GeoPandas`, `Folium`, `Plotly`) as well as exact latitude/longitude centroids for direct plotting without GIS libraries.
+
+### Key Columns in Boundary CSV:
+| Column Name | Type | Description & Units |
+| :--- | :--- | :--- |
+| `LSOA21CD` | String | 2021 LSOA census code. Primary join key. |
+| `LSOA21NM` | String | LSOA neighbourhood name. |
+| `LAT` | Float | Latitude centroid coordinate (WGS84, e.g. `51.51817`). |
+| `LONG` | Float | Longitude centroid coordinate (WGS84, e.g. `-0.09715`). |
+| `BNG_E` | Integer | British National Grid Easting coordinate (meters). |
+| `BNG_N` | Integer | British National Grid Northing coordinate (meters). |
+| `Shape__Area` | Float | Geographic surface area ($\text{m}^2$). |
 
 ---
 
 # Track 02: Future Electricity Systems
 
 ### Challenge Objective
-*“Using real GB electricity data, how much carbon (and cost) could a defined flexible load save by shifting when it runs, and what would it take to unlock that flexibility (including reducing peak Gas CCGT and Interconnector reliance)?”*
+*“Using real British electricity data, how much carbon (and cost) could a flexible load (such as EV smart charging or heat pump pre-heating) save by shifting when it runs? What would it take to unlock that flexibility?”*
 
 ---
 
@@ -130,11 +174,11 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 ### Key Columns & Data Dictionary
 | Column Name | Type | Description & Units |
 | :--- | :--- | :--- |
-| `from` | ISO 8601 UTC | Start of 30-minute settlement period (e.g. `2024-01-01T00:00Z`). Join key. |
+| `from` | ISO 8601 UTC | Start of 30-minute settlement period (e.g. `2024-01-01T00:00Z`). Primary join key. |
 | `to` | ISO 8601 UTC | End of 30-minute settlement period (e.g. `2024-01-01T00:30Z`). |
 | `intensity_forecast` | Integer | Day-ahead forecast carbon intensity ($\text{gCO}_2/\text{kWh}$). |
 | `intensity_actual` | Integer | Actual outturn carbon intensity ($\text{gCO}_2/\text{kWh}$). |
-| `intensity_index` | Categorical | Qualitative index (`very low`, `low`, `moderate`, `high`, `very high`). |
+| `intensity_index` | Categorical | Qualitative category (`very low`, `low`, `moderate`, `high`, `very high`). |
 
 ---
 
@@ -151,8 +195,8 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 | `startTime` | ISO 8601 UTC | Start of 30-minute settlement window. Primary join key. |
 | `settlementDate` | Date (`YYYY-MM-DD`) | GB electricity market settlement date. |
 | `settlementPeriod` | Integer ($1 - 48$) | GB settlement period of the day ($1 = 00:00-00:30, \dots, 48 = 23:30-24:00$). |
-| `fuelType` | Categorical | Fuel type: `CCGT` (Gas), `WIND`, `SOLAR`, `NUCLEAR`, `BIOMASS`, `HYDRO`, `INTFR` (France IFA), `INTIFA2` (IFA2), `INTNEM` (Nemo), `INTELEC` (ElecLink), `INTNSL` (North Sea Link), `INTVIK` (Viking Link), `PS` (Pumped Storage), `OTHER`. |
-| `generation` | Float / Integer | Electrical power output in Megawatts ($\text{MW}$). |
+| `fuelType` | Categorical | Fuel category: `CCGT` (Combined Cycle Gas Turbine), `WIND`, `SOLAR`, `NUCLEAR`, `BIOMASS`, `HYDRO`, `INTFR` (France IFA), `INTIFA2` (IFA2), `INTNEM` (Nemo), `INTELEC` (ElecLink), `INTNSL` (North Sea Link Norway), `INTVIK` (Viking Link Denmark), `PS` (Pumped Storage), `OTHER`. |
+| `generation` | Float / Integer | Average electrical power output over the half-hour in Megawatts ($\text{MW}$). |
 
 ---
 
@@ -177,35 +221,52 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 * **Source**: DESNZ Sub-national Electricity Statistics
 * **Official URL**: [GOV.UK Regional Electricity Statistics](https://www.gov.uk/government/statistics/regional-and-local-authority-electricity-consumption-statistics)
 * **Temporal Coverage**: 2024 Baseline
-* **Purpose**: Fulfills Task 4 (*"Ground it in a real place using sub-national consumption"*).
+* **Purpose**: Fulfills Task 4 (*"Ground it in a real place using sub-national consumption"*). Allows scaling load shifts to local authority electricity demand.
+* **Key Sheet**: **`2024`** (`header=4`).
+
+### Key Columns & Data Dictionary (Sheet: `2024`)
+| Column Name in File | Type | Description & Units |
+| :--- | :--- | :--- |
+| `Code` | String | Country, Region, or Local Authority code (e.g. `E09000001`). Join key. |
+| `Country or region` | String | Country or Government Region name. |
+| `Local authority` | String | Council/District name (e.g. `Hartlepool`, `Birmingham`, `All local authorities`). |
+| `Number of meters (thousands): All Domestic` | Float | Total domestic electricity meters in thousands. |
+| `Number of meters (thousands): All Non-Domestic` | Float | Total commercial and industrial meters in thousands. |
+| `Number of meters (thousands): All meters` | Float | Total electricity meters in thousands. |
+| `Total consumption (GWh): All Domestic` | Float | Aggregate annual residential electricity demand in Gigawatt-hours ($\text{GWh}$). |
+| `Total consumption (GWh): All Non-Domestic` | Float | Aggregate annual commercial/industrial demand in Gigawatt-hours ($\text{GWh}$). |
+| `Total consumption (GWh): All meters` | Float | Total electricity consumption ($\text{GWh}$). |
+| `Mean consumption (kWh per meter): All Domestic` | Float | Average domestic meter annual electricity consumption ($\text{kWh}$). |
+| `Median consumption (kWh per meter): All Domestic` | Float | Median domestic meter annual electricity consumption ($\text{kWh}$). |
+| `Mean domestic consumption (kWh per household)` | Float | Average electricity consumption per household ($\text{kWh}$). |
 
 ---
 
 # Track 03: Heat, Buildings & Decarbonisation
 
 ### Challenge Objective
-*“Across real heat-pump homes, which are most at risk of cold surfaces, damp and condensation, and does the assessment method change the answer (Glaser monthly-average vs. measured overnight-minimum under Awaab's Law)?”*
+*“In real heat-pump homes, which properties are most at risk of condensation and mould on cold surfaces? Does that risk get hidden when using standard monthly averages (the Glaser method) compared to real, measured overnight lows?”*
 
 ---
 
 ## 1. `eoh_interim_performance_summary.csv` [Per Brief]
 * **Source**: Electrification of Heat (EoH) Demonstration Project (Energy Systems Catapult / DESNZ)
 * **Official URL**: [OpenNetZero Electrification of Heat Project](https://opennetzero.org/) & [ESC Open Data](https://es.catapult.org.uk/tools-and-labs/data/)
-* **Purpose**: Cohort microdata of real UK heat pump homes on coldest winter days.
+* **Purpose**: Cohort microdata of real UK heat pump homes on coldest winter days to evaluate real-world efficiency and indoor temperatures.
 
 ### Key Columns & Data Dictionary
 | Column Name | Type | Description & Units |
 | :--- | :--- | :--- |
-| `property_id` | String | Unique home identifier (e.g. `EoH_Home_001`). |
+| `property_id` | String | Unique home trial identifier (e.g. `EoH_Home_001`). |
 | `property_type` | Categorical | Dwelling form (`Detached`, `Semi-Detached`, `Terraced`, `Bungalow`). |
 | `epc_band` | Categorical | Energy efficiency band (`C`, `D`, `E`, `F`). |
 | `heat_pump_type` | Categorical | System type (`ASHP` = Air Source, `GSHP` = Ground Source, `Hybrid`). |
 | `coldest_day_min_outdoor_temp_C` | Float | Minimum recorded outdoor temperature on the coldest trial day ($^\circ\text{C}$). |
-| `coldest_day_mean_indoor_temp_C` | Float | 24-hour mean indoor temperature across the property ($^\circ\text{C}$). |
-| `coldest_day_overnight_min_indoor_temp_C` | Float | Lowest recorded indoor temperature during overnight hours ($^\circ\text{C}$). |
-| `wall_u_value` | Float | Thermal transmittance of external walls ($\text{W}/\text{m}^2\text{K}$). |
+| `coldest_day_mean_indoor_temp_C` | Float | 24-hour mean indoor temperature across the property ($^\circ\text{C}$). Represents the standard monthly/daily average view. |
+| `coldest_day_overnight_min_indoor_temp_C` | Float | Lowest recorded indoor temperature during overnight hours ($^\circ\text{C}$). Represents the cold overnight extreme view. |
+| `wall_u_value` | Float | Thermal transmittance of external walls ($\text{W}/\text{m}^2\text{K}$). Lower is better insulated. |
 | `window_u_value` | Float | Thermal transmittance of glazing ($\text{W}/\text{m}^2\text{K}$). |
-| `seasonal_cop` | Float | Seasonal Coefficient of Performance (heat output / electrical input). |
+| `seasonal_cop` | Float | Seasonal Coefficient of Performance (heat output / electrical input ratio). |
 
 ---
 
@@ -220,7 +281,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 | `lmk_key` | String | Unique domestic EPC certificate key. |
 | `property_type` | Categorical | Dwelling type (`House`, `Flat`, `Bungalow`, `Maisonette`). |
 | `built_form` | Categorical | Architecture (`Detached`, `Semi-Detached`, `Mid-Terrace`, `End-Terrace`). |
-| `current_energy_rating` | Categorical | Standard SAP EPC Rating (`A` through `G`). |
+| `current_energy_rating` | Categorical | Standard SAP EPC Rating band (`A` through `G`). |
 | `current_energy_efficiency` | Integer ($1 - 100$) | Numerical Energy Efficiency Score ($0 - 100$). |
 | `glaz_type` | Categorical | Window glazing type (`single glazing`, `double glazing`, `triple glazing`). |
 | `walls_description` | Text | Physical wall insulation description (e.g. `Cavity wall, filled cavity`). |
@@ -232,7 +293,7 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 ## 3. `ideal_household_temp_humidity_sample.csv` [Per Brief - Stretch Goal]
 * **Source**: IDEAL Household Energy Dataset (University of Edinburgh)
 * **Official URL**: [Edinburgh DataShare IDEAL Repository](https://datashare.ed.ac.uk/handle/10283/3647)
-* **Purpose**: Provides real high-resolution indoor room temperature and relative humidity timeseries to evaluate dew points and damp risk.
+* **Purpose**: High-resolution indoor room temperature and relative humidity sensor telemetry to evaluate dew points and damp risk.
 
 ### Key Columns & Data Dictionary
 | Column Name | Type | Description & Units |
@@ -247,12 +308,12 @@ This document provides a comprehensive data dictionary, schema guide, and reprod
 ## 4. `uk_cold_snap_winter_weather_hourly.csv` [Added Dataset]
 * **Source**: Open-Meteo Historical Weather API
 * **API Documentation**: [Open-Meteo Historical Weather](https://open-meteo.com/en/docs/historical-weather-api)
-* **Purpose**: Essential for Task 1. Provides freezing outdoor weather conditions to compute surface temperature and dew point margins ($T_{surface} - T_{dew\_point}$).
+* **Purpose**: Freezing outdoor weather conditions during the December 2022 UK cold snap to compute surface temperature and dew point margins ($T_{\text{surface}} - T_{\text{dew\_point}}$).
 
 ### Key Columns & Data Dictionary
 | Column Name | Type | Description & Units |
 | :--- | :--- | :--- |
-| `time` | ISO 8601 UTC | Hourly timestamp during freezing winter cold spell. |
+| `time` | ISO 8601 UTC | Hourly timestamp during the freezing winter cold spell. |
 | `outdoor_temp_C` | Float | Outdoor 2-meter air temperature ($^\circ\text{C}$). |
 | `outdoor_rh_pct` | Float | Outdoor relative humidity ($0\% - 100\%$). |
 | `outdoor_dew_point_C` | Float | Outdoor dew point temperature ($^\circ\text{C}$). |
