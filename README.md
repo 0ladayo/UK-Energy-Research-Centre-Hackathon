@@ -127,3 +127,21 @@ cd UK-Energy-Research-Centre-Hackathon
 # Install recommended packages
 pip install pandas numpy matplotlib seaborn openpyxl jupyter
 ```
+
+## License
+
+This repository uses a dual-licensing structure to separate software code from research datasets and documentation:
+
+* **Code (`notebooks/` & inline code snippets in `.md` files):** All scripts, notebooks, and data-reproduction code snippets are licensed under the [MIT License](LICENSE).
+* **Datasets & Documentation (`datasets/`, `DATASET_DICTIONARY.md`, Hackathon Problem Statement & Impact Report Framework):** Original compilations, schemas, and written documentation created for the UK Energy Research Centre Hackathon are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](datasets/LICENSE), except where governed by upstream source terms below.
+
+### Third-Party Data Attributions & Exceptions
+Underlying datasets remain subject to their original publisher licenses:
+* **UK Government Datasets (DESNZ, MHCLG, ONS):** Licensed under the [Open Government Licence v3.0 (OGL v3.0)](https://nationalarchives.gov.uk).
+  * *ONS Boundaries:* Source: Office for National Statistics licensed under the Open Government Licence v.3.0; Contains OS data © Crown copyright and database right 2021.
+  * *Electrification of Heat (EoH):* Energy Systems Catapult & DESNZ (OGL v3.0).
+* **NESO Carbon Intensity Data:** Licensed under [CC BY 4.0](https://creativecommons.org) by the National Energy System Operator (NESO).
+* **Elexon BMRS Generation Data:** Licensed under the [Elexon BSC Open Data Licence](https://elexon.co.uk). Contains BMRS data © Elexon Limited copyright and database right 2024.
+* **Open-Meteo Weather Data:** Licensed under [CC BY 4.0](https://creativecommons.org) via Open-Meteo.com.
+* **IDEAL Household Energy Sample (`ideal_household_temp_humidity_sample.csv`):** Licensed strictly under **[Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org)** via the University of Edinburgh (DOI: `10.7488/ds/2836`). Commercial use is prohibited.
+* **Octopus Energy Tariff Data (`octopus_agile_tariffs_30min_2024_full.csv`):** Retrieved from the public [Octopus Energy Developer API](https://octopus.energy) for educational/hackathon use; remains subject to Octopus Energy's terms of use.
