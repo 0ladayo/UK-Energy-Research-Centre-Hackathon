@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these curated datasets, schemas, or notebooks in your research, please cite this repository as below."
+title: "UK Energy Research Centre (UKERC) Hackathon: Curated Datasets, Schemas, and Starter Notebooks"
+abstract: "Curated multi-track UK energy datasets, standardized LSOA schemas, data dictionary, and starter Jupyter notebooks developed and facilitated for the UK Energy Research Centre (UKERC) Hackathon."
+authors:
+  - family-names: "Siyanbola"
+    given-names: "Oladayo"
+date-released: 2026-09-15
+version: "1.0.0"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com"
+keywords:
+  - UK energy
+  - UKERC
+  - fuel poverty
+  - LSOA
+  - electricity systems
+  - heat decarbonisation
+  - open data
+  - hackathon
